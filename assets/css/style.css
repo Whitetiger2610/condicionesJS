@@ -1,0 +1,34 @@
+body {
+    margin: 50px;
+    padding: 0px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+
+}
+.stickers{
+    margin : 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+input {
+    width: 20px;
+}
+
+button {
+    width: 80px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers - 2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Puedes llevar hasta 10 Stickers</h1>
+    
+        <div class="stickers">
+            <div class="sticker">
+                <img for="defense" src="assets/img/arum-dfs.jpg" alt="defense">
+                <input type="text" name="defense" id="dfs"> 
+            </div>
+            <div class="sticker">
+                <img for="fresh" src="assets/img/arum-fresh.jpg" alt="fresh">
+                <input type="text" name="fresh" id="frs"> 
+            </div>
+            <div class="sticker">
+                <img for="life" src="assets/img/arum-lfe.jpg" alt="life">
+                <input type="text" name="life" id="life"> 
+            </div>
+        
+        </div>
+        <p id="cuenta"></p>
+            <button onclick="
+
+            n_dfs = Number(document.querySelector('#dfs').value)
+            n_frs = Number(document.querySelector('#frs').value)
+            n_life = Number(document.querySelector ('#life').value)
+            total = n_dfs + n_frs + n_life
+            cuenta = document.querySelector('#cuenta')
+
+            if (total >10){
+                cuenta.innerHTML = 'LLevas demasiados stickers'
+            } else {
+                cuenta.innerHTML = 'LLevas ' + total + ' stickers'
+            }
+            
+            
+            ">Verificar</button>
+    </main>
+
+    <br>
+    <br>
+    <a href="index.html">Volver</a>
+    
+</body>
+</html>
